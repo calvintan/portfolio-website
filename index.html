@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="container">
+
+    <div class="navbar">
+      <a class="logo" href="#">Logo</a>
+
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <h1>
+      <span>Calvin T</span>Web Design Portfolio
+    </h1>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="about">
+  <div class="container">
+
+    <div class="left">
+      <h3>About Me</h3>
+    </div><!-- .left -->
+
+    <div class="right">
+      <p>Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Placeat ad nam voluptate amet a nesciunt in dignissimos praesentium vero suscipit et cumque recusandae ducimus, ea exercitationem perspiciatis nisi distinctio. Ducimus.</p>
+
+      <div class="flex">
+        <div class="work">
+          <img src="images/portfolio-1.jpg" alt="">
+          <h3>Portfolio 1</h3>
+          <p>Some description about this work</p>
+        </div>
+        <div class="work">
+          <img src="images/portfolio-1.jpg" alt="">
+          <h3>Portfolio 2</h3>
+          <p>Some description about this work</p>
+        </div>
+      </div>
+    </div><!-- .right -->
+
+  </div>
+</div>
+
+<!-- Numbers Section -->
+<div class="numbers">
+  <div class="container">
+
+    <div class="number">
+      <h3>New clients</h3>
+      2,200+
+    </div>
+    <div class="number">
+      <h3>Statistic</h3>
+      4,000+
+    </div>
+    <div class="number">
+      <h3>Awards</h3>
+      860+
+    </div>
+
+  </div>
+</div>
+
+<!-- Portfolio Section -->
+
+<div class="portfolio">
+  <div class="container">
+
+    <div class="buttons">
+      <button data-filter="*">All</button>
+      <button data-filter=".design">Design</button>
+      <button data-filter=".photo">Photos</button>
+    </div>
+
+    <div class="items">
+      <div class="item design">
+        <img src="images/pet-1.jpg" alt="">
+      </div>
+      <div class="item photo">
+        <img src="images/pet-2.jpg" alt="">
+      </div>
+      <div class="item design">
+        <img src="images/pet-1.jpg" alt="">
+      </div>
+      <div class="item photo">
+        <img src="images/pet-2.jpg" alt="">
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Script for portfolio gallery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+<script>
+
+var $grid = $('.items').isotope({});
+
+// filter items when button is clicked
+$('.buttons').on( 'click', 'button', function() {
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+	font-family: 'Avenir', sans-serif;
+}
+
+/* Hero section */
+.hero {
+	background-image: url(images/background.jpg);
+	height: 600px;
+	color: white;
+	background-size: cover;
+}
+
+.hero .container {
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container {
+	display: flex;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-transform: uppercase;
+	padding-bottom: 100px;
+	letter-spacing: 4px;
+}
+
+h1 span {
+	display: block;
+	font-weight: 400;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+	margin-left: 40px;
+}
+
+.logo {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+/* About section */
+.about {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.left {
+	width: 25%;
+}
+
+.right {
+	width: 75%;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.work {
+	width: 48%;
+}
+
+.work img {
+	width: 100%;
+	height: auto;
+}
+
+/* Numbers */
+.numbers {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: lightsteelblue;
+}
+
+.numbers h3 {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.numbers .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.number {
+	width: 30%;
+	font-weight: 300;
+	font-size: 32px;
+	letter-spacing: 2px;
+}
+
+
+/* Portfolio */
+
+.portfolio {
+	background-color: black;
+	color: white;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.portfolio .container {
+	flex-direction: column;
+}
+
+.buttons {
+	margin-bottom: 30px;
+}
+
+.items {
+	display: flex;
+}
+
+.item {
+	width: 25%;
+}
+
+.item img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
